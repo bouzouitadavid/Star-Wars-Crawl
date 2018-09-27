@@ -1,0 +1,209 @@
+/* css bouzouita david site star wars text defilant */
+/* https://github.com/bouzouitadavid/Star-Wars-Crawl */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html {
+  background-color: black;
+  background-image: url(../img/fond-star.png);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+a {
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  font-weight: 900px;
+  border: 5px solid white;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  transition: 1s all;
+  text-align: center;
+}
+
+a:hover {
+  color: black;
+  background-color: white;
+  border: 0px;
+  transform: scale(1.3);
+}
+
+.hidden {
+  display: none;
+}
+
+.text-intro {
+  display: inherit;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: scale(3);
+  animation: h1 5s 0s;
+  visibility: hidden;
+}
+
+.logo {
+  padding: 0;
+  position: absolute;
+  margin-top: -195px;
+  top: 50%;
+  animation: logo 7s 4s;
+  visibility: hidden;
+}
+
+.crawl {
+  position: absolute;
+  width: 800px;
+  bottom: 0;
+  height: 500vh;
+  font-size: 64px;
+  text-align: justify;
+  transform-origin: center bottom;
+  transform: perspective(300px) rotateX(25deg);
+}
+
+.crawl div {
+  color: white;
+  position: absolute;
+  top: 100%;
+  animation: crawl 70s 4s;
+  text-align: center;
+}
+.crawl div h2 {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.crawl div blockquote {
+  font-weight: 300;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+.crawl div p {
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1,2em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+.crawl div p:nth-of-type(3) {
+  border-bottom: 2px solid white;
+  padding-bottom: 30px;
+}
+.crawl div p:nth-last-of-type(1) {
+  text-align: center;
+}
+
+.btn {
+  margin-top: 50px;
+}
+
+/* keyframes */
+@keyframes crawl {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    bottom: inherit;
+    opacity: 0;
+  }
+}
+@keyframes h1 {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: visible;
+  }
+}
+@keyframes logo {
+  0% {
+    transform: rotate(160deg) scale(2);
+  }
+  80% {
+    transform: rotate(360deg) scale(0.3);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.3);
+    visibility: visible;
+  }
+}
+@keyframes color {
+  0% {
+    border-bottom: 50px solid red;
+  }
+  100% {
+    border-bottom: 50px solid blue;
+  }
+}
