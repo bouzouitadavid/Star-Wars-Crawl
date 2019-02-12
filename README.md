@@ -1,2 +1,5 @@
-# Star-Wars-Crawl
-Star War texte défilant avec le music et tout et tout
+# Star Wars Crawl
+Star Wars story resume before movie
+
+### For what ?
+For pleasure and challenge in becode learning way
